@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulär</title>
+  </head>
+  <body>
+    <div class="formContainer">
+      <form action="https://httpbin.org/anything" method="post">
+        <h2>Vänligen fyll i följande formulär</h2>
+        <br />
+        <div class="firstname">
+          <label for="firstname"></label><br />
+          <input
+            placeholder="Förnamn:"
+            type="firstname"
+            id="firstname"
+            name="firstname"
+            required
+          />
+        </div>
+        <div class="lastname">
+          <label for="lastname"></label><br />
+          <input
+            placeholder="Efternamn:"
+            type="lastname"
+            id="lastname"
+            name="lastname"
+            required
+          /><br />
+        </div>
+        <div class="email">
+          <label for="email"></label><br />
+          <input
+            placeholder="Email:"
+            type="email"
+            id="email"
+            name="email"
+          /><br />
+        </div>
+        <div class="pwd">
+          <label for="pwd"></label><br />
+          <input
+            placeholder="Lösenord:"
+            type="pwd"
+            id="pwd"
+            name="pwd"
+            required
+          /><br />
+        </div>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Skriv din text här"
+        ></textarea>
+
+        <div class="radio">
+          <p>Välj ditt favorit språk:</p>
+
+          <input type="radio" id="html" name="favspråk" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="favspråk" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="favspråk"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label> <br />
+          <input type="radio" id="C#" name="favspråk" value="C#" />
+          <label for="C#">C#</label>
+        </div>
+
+        <div class="favcar">
+          <p>Vilken/vilka är snyggast?</p>
+          <input
+            type="checkbox"
+            id="vehicle1"
+            name="vehicle1"
+            value="Buggati"
+          />
+          <label for="vehicle1"> Buggati</label><br />
+          <input
+            type="checkbox"
+            id="vehicle2"
+            name="vehicle2"
+            value="Ferrari"
+          />
+          <label for="vehicle2"> Ferrari</label><br />
+          <input
+            type="checkbox"
+            id="vehicle3"
+            name="vehicle3"
+            value="Lamborgini"
+          />
+          <label for="vehicle3"> Lamborgini</label>
+        </div>
+
+        <div class="buttons">
+          <input type="submit" value="submit" class="subbutton" />
+          <input type="reset" value="reset" class="resbutton" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

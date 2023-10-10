@@ -1,0 +1,74 @@
+body {
+  background-color: lightcyan;
+}
+.formContainer form {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  gap: 30px;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 12px;
+}
+
+input[type="firstname"],
+input[type="lastname"],
+input[type="email"],
+input[type="pwd"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-color: #ccc;
+  border-radius: 12px;
+}
+.firstname {
+  grid-column: 1;
+}
+.lastname {
+  grid-column: 2;
+}
+.email {
+  grid-column: 1;
+}
+.pwd {
+  grid-column: 1;
+}
+
+.formContainer textarea {
+  grid-column: 1;
+  border: 2px solid #ccc;
+}
+.radio {
+  grid-column: 1;
+  margin-left: 20px;
+}
+
+.favcar {
+  grid-column: 2;
+}
+.buttons {
+  grid-column: 1;
+  margin: 30px;
+  border-radius: 12px;
+  gap: 40px;
+  display: flex;
+}
+
+.subbutton {
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resbutton {
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
